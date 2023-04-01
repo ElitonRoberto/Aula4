@@ -55,7 +55,7 @@ class Aula4 extends StatelessWidget {//extends: vai consumir de uma classe State
 
         )2*/
 
-        body: ListView(//cria uma lista 
+        /*3body: ListView(//cria uma lista 
               children:[
                 Container(//container: vai englobar uma serie de layout
                   height: 120,
@@ -83,7 +83,46 @@ class Aula4 extends StatelessWidget {//extends: vai consumir de uma classe State
                 ),
 
               ]
+            )3*/
+
+
+          /*4 body: GridView.count(
+              scrollDirection: Axis.vertical,
+              crossAxisCount: 2,
+              children: [
+                Container(
+                  color: Colors.yellow
+                ),
+                Container(
+                  color: Colors.green
+                ),
+                Container(
+                  color: Colors.blue
+                ),
+                Container(
+                  color: Colors.red
+                )
+              ],
+          )4*/
+
+          drawer: Drawer(
+            child: ListView(
+              children:[
+                DrawerHeader(
+                  child: Text("Filho"),
+                  decoration: BoxDecoration(
+                    color: Colors.amber
+                  ),
+                  ),
+                ListTile(
+                  title: Text("Teste"),
+                  onTap:() {},
+                )
+              ]
             )
+          )
+
+
 
       ),
     );
